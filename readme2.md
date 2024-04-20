@@ -908,9 +908,33 @@ this.height = height;
 
                             ❗❗❗ 🔎🔎 [BINARY SEARCH] 🔎🔎 ❗❗❗
 
-    ## ✅V. subtitlu
+    ## ✅V. -CHALLENGES: Arrays: 
 
-    ## ✅VI. subtitlu
+[Lesson: 126 (Minimum Element Challenge)]/[Lesson: 127 (Reverse Array Challenge)]/[Lesson: 128 (Two Dimensional Array)]/[Lesson: 129 (Multi-dimensional Arrays)]
+
+    ## ✅VI. -Replacing the Array in the method with 3 dots
+             -Varargs
+             -Different method and different process
+             -How to SPLIT all the words in a String
+             -How to SPLIT words from a sentence depending by what we choose, space, a letter, symbol, etc ...
+             -How to use method "Repeat" ... "...".repeat( 20);
+             -How to add automatically elements in a String, comma, brackets, etc using the ".join" mehtod
+
+- public static void main(String[] args){ ... normal method ...}
+
+- public static void main(String ... args){ ... dots method ...}
+
+1. This is a special designation for Java, that means, Java will take zero, one, or many Strings, as arguments to this method, and create an array with wich to process them, in the method
+2. The array will be called args, and be of type String
+3. The difference is minor within the method body, but significant to the code that calls the method.
+4. []: Aceasta indică un vector (array) de argumente. În cazul metodei main, String[] args înseamnă că metoda primește un vector de obiecte de tipul String ca argument.
+   ...: Acesta este denumit și varargs (variadic arguments) și permite metodei să primească un număr variabil de argumente de același tip. De exemplu, dacă aveți o metodă public void exampleMethod(int... numbers), puteți apela această metodă cu un număr variabil de argumente întregi: exampleMethod(1, 2, 3) sau exampleMethod(1, 2, 3, 4, 5).
+5. There can be only one variable argument in a method
+6. The variable argument must be the last argument
+
+[AnotherMain.java]
+
+                            ❗❗❗ 🔯🔯 [3 DOTS METHOD] 🔯🔯 ❗❗❗
 
     ## ✅VII. subtitlu
 
