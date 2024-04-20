@@ -885,6 +885,9 @@ this.height = height;
               -How to obtain random numbers, multiple random numbers from a bigger number, for ex: 10 numbers from a length like [0 to 100]
               -How to sort numbers from an Array or from any place
               -How to sort elements/numbers/etc
+              -How to mutate and make all the elements the same in an Array
+              -How to create a copy Array, creating a copy for an Array
+              -How to print only a certain length of numbers from an Array
 
 -Random(); "is another class in the java.util library, that can be vert useful"
 
@@ -892,7 +895,18 @@ this.height = height;
 
                             ❗❗❗ 📲📲 [Arrays.sort.fill.copyOf] 📲📲 ❗❗❗
 
-    ## ✅IV. subtitlu
+    ## ✅IV. -How to search in Arrays
+             -How to find an element/number/name/etc inside of an Array
+              -Finding a Match, Using a Binary Search and testing equality of arrays
+             -How to find out 2 identycal elements in different Array's
+             -How to find 2 equals elements/values in 2 different Array's
+             -How to sort the numbers in reverse
+
+-asd
+
+[Main.java]/[]
+
+                            ❗❗❗ 🔎🔎 [BINARY SEARCH] 🔎🔎 ❗❗❗
 
     ## ✅V. subtitlu
 

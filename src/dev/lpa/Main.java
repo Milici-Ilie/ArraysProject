@@ -45,7 +45,7 @@ public class Main {
             System.out.print(element + " ");
         }
 
-        //////////// Array inside of bracket and separate by comma ///////////////////
+        //////////// Array inside of bracket and separated by comma ///////////////////
 
         System.out.println();
         System.out.println(Arrays.toString(newArray)); //output => [5, 4, 3, 2, 1]
@@ -56,6 +56,63 @@ public class Main {
 
         int[] firstArray = getRandomArray(10);
         System.out.println(Arrays.toString(firstArray));//output => [ xx, yy, zz, etc...]
+        Arrays.sort(firstArray);
+        System.out.println(Arrays.toString(firstArray));// SORTING the numbers from Array
+
+        int[] secondArray = new int[10];
+        System.out.println(Arrays.toString(secondArray));
+        Arrays.fill(secondArray, 5);//here we are mutating all the elements in the Array to be "5"
+        System.out.println(Arrays.toString(secondArray));
+
+        int[] thirdArray = getRandomArray(10);
+        System.out.println(Arrays.toString(thirdArray));
+
+        int[] fourthArray = Arrays.copyOf(thirdArray, thirdArray.length);// "copyOf" method and we also need to specify the size of the Array that we want to copy "...length"
+        System.out.println(Arrays.toString(fourthArray));//copy of the "thirdArray" 👆
+        Arrays.sort(fourthArray);//sorting the Array
+        System.out.println(Arrays.toString(fourthArray));//displaying the sorted Array
+
+        int[] smallArray = Arrays.copyOf(thirdArray, 5);//printing a smaller Array
+        System.out.println(Arrays.toString(smallArray));//displaying only the first 5 numbers from the "thirdArray"
+
+        int[] largerArray = Arrays.copyOf(thirdArray, 15);
+        System.out.println(Arrays.toString(largerArray));//displaying the normal Array + 5 more numbers which are 0, because the original Array has only 10 elements
+        System.out.println();
+
+        //////////////////////// 🔎🔎 [BINARY SEARCH] 🔎🔎 ////////////////////////////////
+        //////////////////////// 🔎🔎 [BINARY SEARCH] 🔎🔎 ////////////////////////////////
+        //////////////////////// 🔎🔎 [BINARY SEARCH] 🔎🔎 ////////////////////////////////
+
+        String[] sArray = {"Abel", "Jane", "Cain", "Mihail", "Gavril", "David"};
+        Arrays.sort(sArray);
+        System.out.println(Arrays.toString(sArray));
+        if (Arrays.binarySearch(sArray, "Cain") >= 0) {
+            System.out.println("Found Cain in the list");//searching an element inside of Array
+        }
+
+        int[] s1 = {1, 2, 3, 4, 5};
+        int[] s2 = {1, 2, 3, 4, 5};
+        if (Arrays.equals(s1, s2)) {//EQUALS Arrays ===
+            System.out.println("Arrays are equal");
+        } else {
+            System.out.println("Arrays are not equal");
+        }
+        System.out.println("CHALLENGE");
+        System.out.println("CHALLENGE");
+        System.out.println("CHALLENGE");
+
+        //////////////////////////CHALLENGE---reverse numbers{array}//////////////////////////////////
+        //////////////////////////CHALLENGE---reverse numbers{array}//////////////////////////////////
+        //////////////////////////CHALLENGE---reverse numbers{array}//////////////////////////////////
+
+        int[] challengeArray = reverseArray(5);
+        System.out.println(Arrays.toString(challengeArray));
+        Arrays.sort(challengeArray);
+        System.out.println(Arrays.toString(challengeArray));
+
+        for (int i = challengeArray.length - 1; i >= 0; i--) {
+            System.out.print(challengeArray[i] + " ");// here we are displaying the Array numbers in reverse order without numbering all the numbers ourselves
+        }
     }
 
     //////////////////////// 📲📲 [Arrays.sort.fill.copyOf] 📲📲 ////////////////////////////////
@@ -68,6 +125,17 @@ public class Main {
         int[] newInt = new int[len];
         for (int i = 0; i < len; i++) {
             newInt[i] = random.nextInt(100);
+        }//here we created a method that will return 10 Random numbers in the length from [0 - 100]
+
+        return newInt;
+    }
+
+    public static int[] reverseArray(int len) {
+
+        Random random = new Random();//this is the "Random()" java.util library
+        int[] newInt = new int[len];
+        for (int i = 0; i < len; i++) {
+            newInt[i] = random.nextInt(1000);
         }//here we created a method that will return 10 Random numbers in the length from [0 - 100]
 
         return newInt;
