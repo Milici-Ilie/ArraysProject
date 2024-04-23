@@ -910,6 +910,8 @@ this.height = height;
 
     ## ✅V. -CHALLENGES: Arrays: 
 
+[MinimumElementChallenge.java]
+
 [Lesson: 126 (Minimum Element Challenge)]/[Lesson: 127 (Reverse Array Challenge)]/[Lesson: 128 (Two Dimensional Array)]/[Lesson: 129 (Multi-dimensional Arrays)]
 
     ## ✅VI. -Replacing the Array in the method with 3 dots
@@ -936,7 +938,22 @@ this.height = height;
 
                             ❗❗❗ 🔯🔯 [3 DOTS METHOD] 🔯🔯 ❗❗❗
 
-    ## ✅VII. subtitlu
+    ## ✅VII. -Two-Dimensional Array
+              -Multi-Dimensional Array
+
+-EX: --- int[][] array = { ... code ... };
+-EX: --- int[][] array = new int[3][3]; 
+-EX: --- int[][] array = new int[3][];
+    -Here, we're specifying only the outer array size, by specifying the length, only in the first set of square brackets
+
+-EX: --- Object[] multiDimensionalArray = new Object[3];
+         -multiDimensionalArray[0] = new Dog[3];
+         -multiDimensionalArray[1] = new Dog[3][];
+         -multiDimensionalArray[2] = new Dog[3][][];
+
+[Main.java]/[Lesson: 129 (Multi-dimensional Arrays)]
+
+                            ❗❗❗ 🔅🔅 [DIMENSIONAL ARRAY] 🔅🔅 ❗❗❗
 
     ## ✅VIII. subtitlu
 

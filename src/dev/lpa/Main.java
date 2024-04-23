@@ -113,6 +113,29 @@ public class Main {
         for (int i = challengeArray.length - 1; i >= 0; i--) {
             System.out.print(challengeArray[i] + " ");// here we are displaying the Array numbers in reverse order without numbering all the numbers ourselves
         }
+
+        System.out.println();
+        System.out.println("-".repeat(20));
+
+        //////////////////////////🔅🔅 [DIMENSIONAL ARRAY] 🔅🔅//////////////////////////////////
+        //////////////////////////🔅🔅 [DIMENSIONAL ARRAY] 🔅🔅//////////////////////////////////
+        //////////////////////////🔅🔅 [DIMENSIONAL ARRAY] 🔅🔅//////////////////////////////////
+
+
+        int[][] array2 = new int[4][4];
+        System.out.println(Arrays.toString(array2));
+        System.out.println("array2.length = " + array2.length);
+
+        for (int[] outer : array2) {
+            System.out.println(Arrays.toString(outer));
+        }
+
+        for (var outer : array2) {
+            for (var element : outer) {
+                System.out.print(element + " ");
+            }
+            System.out.println();
+        }
     }
 
     //////////////////////// 📲📲 [Arrays.sort.fill.copyOf] 📲📲 ////////////////////////////////
